@@ -16,7 +16,8 @@ public class InertiaSpringRendererOptions {
     private final boolean clearHistory;
 
     /** Default value for encryptHistory, used by constructors and potentially autoconfiguration. */
-    static boolean defaultEncryptHistory = false;
+    static final boolean defaultEncryptHistory = false;
+
     /** Default value for clearHistory, used by constructors. */
     static final boolean defaultClearHistory = false;
 
