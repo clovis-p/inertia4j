@@ -7,6 +7,7 @@ import io.github.inertia4j.core.DefaultPageObjectSerializer;
 import io.github.inertia4j.spi.PageObjectSerializer;
 import io.github.inertia4j.spi.TemplateRenderer;
 import io.github.inertia4j.spring.Inertia.Options;
+import org.jspecify.annotations.NullMarked;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpHeaders;
@@ -45,6 +46,7 @@ public class InertiaTest {
         );
     }
 
+    @NullMarked
     private static class FakeTemplateRenderer implements TemplateRenderer {
         @Override
         public String render(String pageObjectJson) {

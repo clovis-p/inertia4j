@@ -7,12 +7,15 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import io.github.inertia4j.spi.PageObject;
 import io.github.inertia4j.spi.PageObjectSerializer;
 import io.github.inertia4j.spi.SerializationException;
+import org.jspecify.annotations.NullMarked;
+import org.jspecify.annotations.Nullable;
 
 import java.util.List;
 
 /**
  * {@link PageObjectSerializer} implementation using Jackson for JSON serialization.
  */
+@NullMarked
 public class JacksonPageObjectSerializer implements PageObjectSerializer {
     /**
      * The Jackson ObjectMapper instance used for serialization.
@@ -29,7 +32,10 @@ public class JacksonPageObjectSerializer implements PageObjectSerializer {
      *
      */
     @Override
-    public String serialize(PageObject pageObject, List<String> partialDataProps) throws SerializationException {
+    public String serialize(
+        PageObject pageObject,
+        @Nullable List<String> partialDataProps
+    ) throws SerializationException {
         try {
             ObjectNode tree = objectMapper.valueToTree(pageObject);
             if (partialDataProps != null) {

@@ -1,6 +1,7 @@
 package io.github.inertia4j.core;
 
 import io.github.inertia4j.spi.TemplateRenderer;
+import org.jspecify.annotations.NullMarked;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,6 +12,7 @@ import java.util.regex.Pattern;
  * A simple {@link TemplateRenderer} implementation used by default if no specific renderer is provided.
  * It loads a template file from the classpath and replaces a placeholder with the page object JSON.
  */
+@NullMarked
 public class SimpleTemplateRenderer implements TemplateRenderer {
     private final Matcher templateMatcher;
 

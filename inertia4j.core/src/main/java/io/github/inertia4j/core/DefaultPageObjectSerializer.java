@@ -3,7 +3,8 @@ package io.github.inertia4j.core;
 import io.github.inertia4j.spi.PageObject;
 import io.github.inertia4j.spi.PageObjectSerializer;
 import io.github.inertia4j.spi.SerializationException;
-import io.github.inertia4j.core.MissingDependencyException; // Javadoc import
+import org.jspecify.annotations.NullMarked;
+import org.jspecify.annotations.Nullable;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ import java.util.List;
  * If it is, it delegates serialization to JacksonPageObjectSerializer.
  * If not, it throws a {@link MissingDependencyException} during construction.
  */
+@NullMarked
 public class DefaultPageObjectSerializer implements PageObjectSerializer {
     private final PageObjectSerializer actualSerializer;
 
@@ -34,7 +36,10 @@ public class DefaultPageObjectSerializer implements PageObjectSerializer {
      * {@inheritDoc}
      */
     @Override
-    public String serialize(PageObject pageObject, List<String> partialDataProps) throws SerializationException {
+    public String serialize(
+        PageObject pageObject,
+        @Nullable List<String> partialDataProps
+    ) throws SerializationException {
         return actualSerializer.serialize(pageObject, partialDataProps);
     }
 }

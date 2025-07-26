@@ -16,6 +16,10 @@ java {
 group = "io.github.inertia4j"
 version = "1.0.2"
 
+dependencies {
+    api("org.jspecify:jspecify:1.0.0")
+}
+
 configure<PublishingExtension> {
     publications {
         create<MavenPublication>("mavenJava") {

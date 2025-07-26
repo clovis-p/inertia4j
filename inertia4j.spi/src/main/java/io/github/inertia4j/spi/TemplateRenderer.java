@@ -1,8 +1,11 @@
 package io.github.inertia4j.spi;
 
+import org.jspecify.annotations.NullMarked;
+
 /**
  * Interface for template renderers used by Inertia4j.
  */
+@NullMarked
 public interface TemplateRenderer {
     /**
      * Renders the template and injects the JSON string of the page object in place of the <code>@PageObject@</code> placeholder.

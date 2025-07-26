@@ -1,5 +1,7 @@
 package io.github.inertia4j.spi;
 
+import org.jspecify.annotations.NullMarked;
+
 import java.util.Map;
 
 /**
@@ -7,6 +9,7 @@ import java.util.Map;
  *
  * @see <a href="https://inertiajs.com/the-protocol#the-page-object">Inertia Page Object spec</a>
  */
+@NullMarked
 public class PageObject {
     private final String component;
     private final Map<String, Object> props;
