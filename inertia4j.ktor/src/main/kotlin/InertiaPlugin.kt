@@ -4,7 +4,7 @@ import io.github.inertia4j.core.InertiaRenderer
 import io.ktor.server.application.*
 
 /**
- * The main Ktor Application Plugin for integrating Inertia4j.
+ * The main Ktor Application Plugin for integrating Inertia4J.
  * This plugin initializes the core [InertiaRenderer] based on the provided [InertiaKtorConfiguration]
  * and makes the Ktor-specific [InertiaKtorRenderer] available via application attributes.
  */

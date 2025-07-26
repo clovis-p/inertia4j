@@ -24,7 +24,7 @@ public class InertiaRenderer {
      * Constructs an InertiaRenderer with explicit dependencies.
      *
      * @param pageObjectSerializer PageObjectSerializer implementation used to serialize the {@link PageObject}.
-     * @param versionProvider provider for the current Inertia asset version
+     * @param versionProvider provider for the current Inertia asset version.
      * @param templateRenderer renderer for the base HTML template used in full page loads.
      */
     public InertiaRenderer(
@@ -105,6 +105,7 @@ public class InertiaRenderer {
     /**
      * Checks if the request indicates an asset version conflict.
      * This happens on GET requests where the `X-Inertia-Version` header doesn't match the current asset version.
+     *
      * @param request The incoming HTTP request.
      * @return {@code true} if there's a version conflict, {@code false} otherwise.
      */
@@ -119,6 +120,7 @@ public class InertiaRenderer {
     /**
      * Handles the response when an asset version conflict is detected.
      * Returns a 409 Conflict response with the `X-Inertia-Location` header set to the request URL.
+     *
      * @param request The incoming HTTP request.
      * @param options The rendering options.
      * @return An {@link HttpResponse} for a version conflict.
@@ -135,6 +137,7 @@ public class InertiaRenderer {
     /**
      * Handles a standard successful Inertia request (not a version conflict or redirect).
      * Determines whether to return a full HTML response or a JSON response based on the `X-Inertia` header.
+     *
      * @param request The incoming HTTP request.
      * @param options The rendering options.
      * @return An {@link HttpResponse} containing either the full HTML page or the JSON PageObject.
@@ -167,6 +170,7 @@ public class InertiaRenderer {
     /**
      * Creates a {@link PageObject} instance from the provided rendering options.
      * Checks for the `X-Inertia-Partial-Component` header to potentially modify props based on partial rendering requests.
+     *
      * @param request The incoming HTTP request.
      * @param options The rendering options.
      * @return A configured {@link PageObject}.
@@ -189,6 +193,7 @@ public class InertiaRenderer {
     /**
      * Serializes the {@link PageObject} into a JSON string.
      * Checks for the `X-Inertia-Partial-Data` header to determine if only a subset of props should be included in the JSON.
+     *
      * @param request The incoming HTTP request.
      * @param pageObject The PageObject to serialize.
      * @return The JSON string representation of the PageObject.
@@ -210,6 +215,7 @@ public class InertiaRenderer {
 
     /**
      * Checks if the HTTP request method is PUT, PATCH, or DELETE.
+     *
      * @param request The incoming HTTP request.
      * @return {@code true} if the method is PUT, PATCH, or DELETE, {@code false} otherwise.
      */

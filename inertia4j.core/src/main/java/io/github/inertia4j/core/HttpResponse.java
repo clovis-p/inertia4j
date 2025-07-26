@@ -16,6 +16,7 @@ public class HttpResponse {
 
     /**
      * Sets the HTTP status code for the response.
+     *
      * @param code The HTTP status code.
      * @return This HttpResponse instance for chaining.
      */
@@ -25,7 +26,9 @@ public class HttpResponse {
     }
 
     /**
-     * Adds an HTTP header to the response. If the header already exists, the value is added to the list of values for that header.
+     * Adds an HTTP header to the response. If the header already exists,
+     * the value is added to the list of values for that header.
+     *
      * @param name The name of the header.
      * @param value The value of the header.
      * @return This HttpResponse instance for chaining.
@@ -38,7 +41,8 @@ public class HttpResponse {
 
     /**
      * Sets the body content for the response.
-     * @param body The response body as a String.
+     *
+     *  @param body The response body as a String.
      * @return This HttpResponse instance for chaining.
      */
     HttpResponse setBody(String body) {
@@ -48,7 +52,8 @@ public class HttpResponse {
 
     /**
      * Gets the HTTP status code of the response.
-     * @return The HTTP status code.
+     *
+     *  @return The HTTP status code.
      */
     public int getCode() {
         return code;
@@ -56,7 +61,9 @@ public class HttpResponse {
 
     /**
      * Gets the headers of the response.
-     * @return A map containing the response headers, where the key is the header name and the value is a list of header values.
+     *
+     * @return A map containing the response headers, where the key
+     * is the header name and the value is a list of header values.
      */
     public Map<String, List<String>> getHeaders() {
         return headers;
@@ -64,6 +71,7 @@ public class HttpResponse {
 
     /**
      * Gets the body of the response.
+     *
      * @return The response body as a String.
      */
     public String getBody() {

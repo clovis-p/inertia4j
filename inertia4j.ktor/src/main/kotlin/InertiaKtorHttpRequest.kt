@@ -1,14 +1,12 @@
 package io.github.inertia4j.ktor
 
 import io.github.inertia4j.core.HttpRequest
-import io.ktor.server.request.header
-import io.ktor.server.request.httpMethod
-import io.ktor.server.request.uri
-import io.ktor.server.routing.RoutingRequest
+import io.ktor.server.request.*
+import io.ktor.server.routing.*
 
 /**
  * Implementation of [HttpRequest] that wraps a Ktor [RoutingRequest].
- * This acts as an adapter between the Ktor request object and the core Inertia4j renderer.
+ * This acts as an adapter between the Ktor request object and the core Inertia4J renderer.
  *
  * @property request The underlying Ktor [RoutingRequest].
  */

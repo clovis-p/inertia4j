@@ -1,11 +1,12 @@
 package io.github.inertia4j.spi;
 
 /**
- * Base exception for Inertia4j related errors.
+ * Base exception for Inertia4J related errors.
  */
 public class InertiaException extends RuntimeException {
     /**
      * Constructs a new Inertia exception with the specified detail message.
+     *
      * @param message the detail message.
      */
     public InertiaException(String message) {
@@ -14,6 +15,7 @@ public class InertiaException extends RuntimeException {
 
     /**
      * Constructs a new Inertia exception with the specified detail message and cause.
+     *
      * @param message the detail message.
      * @param cause the cause.
      */
@@ -23,6 +25,7 @@ public class InertiaException extends RuntimeException {
 
     /**
      * Constructs a new Inertia exception with the specified cause.
+     *
      * @param cause the cause.
      */
     public InertiaException(Throwable cause) {

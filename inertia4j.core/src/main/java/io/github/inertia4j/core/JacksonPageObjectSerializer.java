@@ -27,9 +27,8 @@ public class JacksonPageObjectSerializer implements PageObjectSerializer {
     /**
      * {@inheritDoc}
      * <p>
-     * If {@code partialDataProps} is provided, only the properties specified in the list
-     * will be included under the "props" key in the resulting JSON.
-     *
+     * If {@code partialDataProps} is provided, only the properties specified
+     * in the list will be included under the "props" key in the resulting JSON.
      */
     @Override
     public String serialize(

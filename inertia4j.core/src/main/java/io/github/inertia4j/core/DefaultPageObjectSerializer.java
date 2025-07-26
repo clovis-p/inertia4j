@@ -21,6 +21,7 @@ public class DefaultPageObjectSerializer implements PageObjectSerializer {
 
     /**
      * Constructs a new DefaultPageObjectSerializer, checking for Jackson dependency.
+     *
      * @throws MissingDependencyException if Jackson Databind is not found on the classpath.
      */
     public DefaultPageObjectSerializer() {

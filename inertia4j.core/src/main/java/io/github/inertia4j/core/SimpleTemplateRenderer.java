@@ -50,6 +50,7 @@ public class SimpleTemplateRenderer implements TemplateRenderer {
 
     /**
      * Loads the template content from the specified classpath resource path.
+     *
      * @param path The classpath path to the template file.
      * @return The content of the template file as a String.
      * @throws TemplateRenderingException if the template file cannot be found or read.

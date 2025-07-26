@@ -9,6 +9,7 @@ import io.github.inertia4j.spi.InertiaException;
 public class MissingDependencyException extends InertiaException {
     /**
      * Constructs a new MissingDependencyException with the specified detail message.
+     *
      * @param message the detail message.
      */
     public MissingDependencyException(String message) {

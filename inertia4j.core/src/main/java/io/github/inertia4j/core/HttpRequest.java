@@ -1,7 +1,7 @@
 package io.github.inertia4j.core;
 
 /**
- * Interface providing access to HTTP request information needed by Inertia4j.
+ * Interface providing access to HTTP request information needed by Inertia4J.
  */
 public interface HttpRequest {
     /**
@@ -14,6 +14,7 @@ public interface HttpRequest {
 
     /**
      * Returns the HTTP method of the request (e.g., "GET", "POST").
+     *
      * @return The HTTP method as a String.
      */
     String getMethod();

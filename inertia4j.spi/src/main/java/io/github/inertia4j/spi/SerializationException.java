@@ -6,6 +6,7 @@ package io.github.inertia4j.spi;
 public class SerializationException extends InertiaException {
     /**
      * Constructs a new serialization exception with the specified cause.
+     *
      * @param cause the cause.
      */
     public SerializationException(Throwable cause) {

@@ -8,6 +8,7 @@ import io.github.inertia4j.spi.InertiaException;
 public class TemplateRenderingException extends InertiaException {
     /**
      * Constructs a new exception indicating the template file was not found at the specified path.
+     *
      * @param path The classpath path where the template was expected.
      */
     public TemplateRenderingException(String path) {
@@ -16,6 +17,7 @@ public class TemplateRenderingException extends InertiaException {
 
     /**
      * Constructs a new exception indicating an error occurred while reading the template file.
+     *
      * @param path The classpath path of the template file being read.
      * @param cause The underlying {@link java.io.IOException} that occurred.
      */
