@@ -10,13 +10,13 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
 /**
  * Spring Boot auto-configuration for Inertia4j.
  * Sets up default beans for {@link Inertia}, {@link VersionProvider},
  * {@link PageObjectSerializer}, and {@link TemplateRenderer} if they are not
  * already present in the application context.
  */
+@Configuration
 public class InertiaSpringAutoconfiguration {
     @Autowired
     InertiaConfigurationProperties properties;
