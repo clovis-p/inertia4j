@@ -1,4 +1,4 @@
-package io.github.inertia4j.spring;
+package io.github.inertia4j.springboot3;
 
 /**
  * Functional interface for providing the current Inertia asset version.
