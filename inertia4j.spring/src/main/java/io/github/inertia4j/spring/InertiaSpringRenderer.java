@@ -1,4 +1,4 @@
-package io.github.inertia4j.springboot3;
+package io.github.inertia4j.spring;
 
 import io.github.inertia4j.core.HttpRequest;
 import io.github.inertia4j.core.HttpResponse;

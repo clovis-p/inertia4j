@@ -1,4 +1,4 @@
-package io.github.inertia4j.springboot3;
+package io.github.inertia4j.spring;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.bind.ConstructorBinding;

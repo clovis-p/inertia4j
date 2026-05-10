@@ -44,7 +44,7 @@ configure<PublishingExtension> {
         create<MavenPublication>("mavenJava") {
             from(components["java"])
 
-            artifactId = "inertia4j-spring-boot-3"
+            artifactId = "inertia4j-spring"
 
             pom {
                 name.set("Inertia4J Spring Boot 3")
