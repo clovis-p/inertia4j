@@ -20,7 +20,8 @@ repositories {
 }
 
 dependencies {
-    api(project(":inertia4j.spring-shared"))
+    api(project(":inertia4j.core"))
+    api(project(":inertia4j.spi"))
 
     compileOnly("jakarta.servlet:jakarta.servlet-api")
     compileOnly("org.springframework.boot:spring-boot-autoconfigure")
@@ -43,13 +44,13 @@ configure<PublishingExtension> {
         create<MavenPublication>("mavenJava") {
             from(components["java"])
 
-            artifactId = "inertia4j-spring"
+            artifactId = "inertia4j-spring-shared"
 
             pom {
-                name.set("Inertia4J Spring Boot 3")
-                description.set("Inertia4J back-end adapter for Spring Boot 3")
+                name.set("Inertia4J Shared")
+                description.set("Inertia4J shared logic with Spring Boot 3 and Spring Boot 4 adapters")
                 url.set("https://github.com/Inertia4J/inertia4j")
-                inceptionYear.set("2025")
+                inceptionYear.set("2026")
 
                 licenses {
                     license {

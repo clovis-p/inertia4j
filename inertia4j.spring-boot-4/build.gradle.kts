@@ -20,8 +20,7 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":inertia4j.core"))
-    api(project(":inertia4j.spi"))
+    api(project(":inertia4j.spring-shared"))
 
     compileOnly("jakarta.servlet:jakarta.servlet-api")
     compileOnly("org.springframework.boot:spring-boot-autoconfigure")
@@ -53,7 +52,7 @@ configure<PublishingExtension> {
                 name.set("Inertia4J Spring Boot 4")
                 description.set("Inertia4J back-end adapter for Spring Boot 4")
                 url.set("https://github.com/Inertia4J/inertia4j")
-                inceptionYear.set("2025")
+                inceptionYear.set("2026")
 
                 licenses {
                     license {
